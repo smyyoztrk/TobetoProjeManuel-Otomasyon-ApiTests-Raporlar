@@ -1,0 +1,177 @@
+{
+	"id": "6feb4f39-4674-4e1c-9fec-6d14ed98765b",
+	"name": "TobetoColleges",
+	"timestamp": "2024-03-02T10:51:23.173Z",
+	"collection_id": "32037921-b38d67b7-52cf-4451-b375-2c997a4aeacf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T10:51:21.672Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f45116a7-c3d2-4610-9aec-fe8f75f5a9af",
+			"name": "Create College",
+			"url": "http://localhost:60805/api/Colleges",
+			"time": 170,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				170
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "00865e5c-2fc6-45c6-9355-1b5118e408a7",
+			"name": "Get Colleges",
+			"url": "http://localhost:60805/api/Colleges?PageIndex=0&PageSize=20",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "8fc916e3-49c7-407b-b707-4a7834386f81",
+			"name": "Get College-id",
+			"url": "http://localhost:60805/api/Colleges/1",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "da9f9850-9a57-495c-ac3f-be5cd001e559",
+			"name": "Update College",
+			"url": "http://localhost:60805/api/Colleges",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				80
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "f68532e1-1927-4709-906c-89f1d45937ed",
+			"name": "Delete College",
+			"url": "http://localhost:60805/api/Colleges/4",
+			"time": 81,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				81
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 422,
+	"collection": {
+		"requests": [
+			{
+				"id": "f45116a7-c3d2-4610-9aec-fe8f75f5a9af",
+				"method": "POST"
+			},
+			{
+				"id": "00865e5c-2fc6-45c6-9355-1b5118e408a7",
+				"method": "GET"
+			},
+			{
+				"id": "8fc916e3-49c7-407b-b707-4a7834386f81",
+				"method": "GET"
+			},
+			{
+				"id": "da9f9850-9a57-495c-ac3f-be5cd001e559",
+				"method": "PUT"
+			},
+			{
+				"id": "f68532e1-1927-4709-906c-89f1d45937ed",
+				"method": "DELETE"
+			}
+		]
+	}
+}

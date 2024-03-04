@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "a2bc5304-1850-47ee-9519-28350aaf8240",
+		"name": "CertificatesTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27921593"
+	},
+	"item": [
+		{
+			"name": "CreateCertificate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"deneme\",\n  \"path\": \"denemePath\",\n  \"priority\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/Certificates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Certificates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCertificate-id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Certificates/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Certificates",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCertificate-id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Certificates/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Certificates",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCertificate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 4,\n  \"name\": \"Herkes İçin Kodlama\",\n  \"path\": \"denemePath\",\n  \"priority\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/Certificates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Certificates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCertificate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJBZG1pbiBOQXJjaGl0ZWN0dXJlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJuYmYiOjE3MDY5NDE4OTUsImV4cCI6MTcwNjk0MjQ5NSwiaXNzIjoibkFyY2hpdGVjdHVyZUBrb2RsYW1hLmlvIiwiYXVkIjoic3RhcnRlclByb2plY3RAa29kbGFtYS5pbyJ9.7guovBQrf7dabN8qXlSHWAILPjSq6QTjfou3PpdmAdoIKsd7FobASDPs9q_mC853UEzLijVlh7pHS-eX-E5Hsg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Certificates?PageIndex=0&PageSize=60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Certificates"
+					],
+					"query": [
+						{
+							"key": "PageIndex",
+							"value": "0"
+						},
+						{
+							"key": "PageSize",
+							"value": "60"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

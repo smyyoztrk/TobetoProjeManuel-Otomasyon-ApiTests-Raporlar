@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "3910084d-e19d-4510-98d4-6dbb8ca6e518",
+		"name": "CollegesTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27921593"
+	},
+	"item": [
+		{
+			"name": "CreateCollege",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Marmara Üniversitesi\",\n  \"visibility\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/Colleges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Colleges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCollege-id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Colleges/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Colleges",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCollege",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"name\": \"Sakarya Üniversitesi\",\n  \"visibility\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/Colleges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Colleges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCollege",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Colleges/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Colleges",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCollege",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Colleges?PageIndex=0&PageSize=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Colleges"
+					],
+					"query": [
+						{
+							"key": "PageIndex",
+							"value": "0"
+						},
+						{
+							"key": "PageSize",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

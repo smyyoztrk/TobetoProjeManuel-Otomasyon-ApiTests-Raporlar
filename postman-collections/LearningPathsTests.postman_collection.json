@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "6448597b-d553-441e-b850-39f0362a521a",
+		"name": "LearningPathsTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32002987"
+	},
+	"item": [
+		{
+			"name": "CreateLearningPath",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Lessons\",\n  \"visibility\": true,\n  \"startingTime\": \"2024-02-17T22:19:24.187Z\",\n  \"endingTime\": \"2024-02-17T22:19:24.187Z\",\n  \"numberOfLikes\": 50,\n  \"totalDuration\": 100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/LearningPaths",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"LearningPaths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLearningPath",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/LearningPaths/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"LearningPaths",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateLearningPath",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"name\": \"Lessons\",\n  \"visibility\": true,\n  \"startingTime\": \"2024-02-17T22:21:56.512Z\",\n  \"endingTime\": \"2024-02-17T22:21:56.512Z\",\n  \"numberOfLikes\": 45,\n  \"totalDuration\": 120\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/LearningPaths",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"LearningPaths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLearningPath",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5278/api/LearningPaths/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"LearningPaths",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

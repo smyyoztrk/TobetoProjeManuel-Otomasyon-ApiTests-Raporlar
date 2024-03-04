@@ -1,0 +1,146 @@
+{
+	"id": "50b700e8-2f14-4e0b-99ce-aff350c5db88",
+	"name": "Organizations",
+	"timestamp": "2024-03-02T16:56:27.846Z",
+	"collection_id": "32037092-f9be98d1-36c5-4fa6-b94b-07a0ba5cea66",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T16:56:26.632Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ba1aa227-a938-4bbd-8460-ac261ac33103",
+			"name": "CreateOrganizations",
+			"url": "http://localhost:60805/api/Organizations",
+			"time": 30,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "48985031-a8e7-4686-bddd-7de653c07109",
+			"name": "UpdateOrganizations",
+			"url": "http://localhost:60805/api/Organizations",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "1a35875e-5c2b-4562-b90d-5eb586c2fbb0",
+			"name": "GetOrganizations",
+			"url": "http://localhost:60805/api/Organizations?PageIndex=0&PageSize=10",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "8696cbc2-85cd-428d-b0cc-19af68328c34",
+			"name": "DeleteOrganizations",
+			"url": "http://localhost:60805/api/Organizations/26",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 185,
+	"collection": {
+		"requests": [
+			{
+				"id": "ba1aa227-a938-4bbd-8460-ac261ac33103",
+				"method": "POST"
+			},
+			{
+				"id": "48985031-a8e7-4686-bddd-7de653c07109",
+				"method": "PUT"
+			},
+			{
+				"id": "1a35875e-5c2b-4562-b90d-5eb586c2fbb0",
+				"method": "GET"
+			},
+			{
+				"id": "8696cbc2-85cd-428d-b0cc-19af68328c34",
+				"method": "DELETE"
+			}
+		]
+	}
+}

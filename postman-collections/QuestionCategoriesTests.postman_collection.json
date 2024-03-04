@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "90b8f0a2-9642-4296-ab65-a1ed26a0a0ec",
+		"name": "QuestionCategoriesTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27921593"
+	},
+	"item": [
+		{
+			"name": "CreateQuestionCategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Çoktan Seçmeli\",\n  \"priority\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/QuestionCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"QuestionCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetQuestionCategory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/QuestionCategories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"QuestionCategories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateQuestionCategory",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 2,\n  \"name\": \"Tests\",\n  \"priority\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/QuestionCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"QuestionCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteQuestionCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/QuestionCategories/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"QuestionCategories",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"id": "c142b78b-e4a7-42c2-8457-ce2a0619bb3b",
+	"name": "OrganizationTypesTests",
+	"timestamp": "2024-03-02T16:58:16.794Z",
+	"collection_id": "32037092-531c1068-bc6e-4197-b290-7803096354ae",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T16:58:15.678Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b97e936b-94a4-4184-9050-69b963252c22",
+			"name": "CreateOrganizationTypes",
+			"url": "http://localhost:60805/api/OrganizationTypes",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "0cc68402-65f6-48af-93e4-91685b035bc6",
+			"name": "UpdateOrganizationTypes",
+			"url": "http://localhost:60805/api/OrganizationTypes",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "1e155a60-a31f-43cd-bf83-a4b178b76162",
+			"name": "GetOrganizationTypes",
+			"url": "http://localhost:60805/api/OrganizationTypes?PageIndex=0&PageSize=20",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "6840647e-0639-44f5-bea1-d4a097d4ab27",
+			"name": "DeleteOrganizationTypes",
+			"url": "http://localhost:60805/api/OrganizationTypes/5",
+			"time": 61,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				61
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 138,
+	"collection": {
+		"requests": [
+			{
+				"id": "b97e936b-94a4-4184-9050-69b963252c22",
+				"method": "POST"
+			},
+			{
+				"id": "0cc68402-65f6-48af-93e4-91685b035bc6",
+				"method": "PUT"
+			},
+			{
+				"id": "1e155a60-a31f-43cd-bf83-a4b178b76162",
+				"method": "GET"
+			},
+			{
+				"id": "6840647e-0639-44f5-bea1-d4a097d4ab27",
+				"method": "DELETE"
+			}
+		]
+	}
+}

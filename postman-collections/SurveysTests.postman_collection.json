@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ccbcfecb-8899-4607-b10e-77e89951c363",
+		"name": "SurveysTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27921593"
+	},
+	"item": [
+		{
+			"name": "CreateSurvey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"surveyTypeId\": 1,\n  \"organizationId\": 2,\n  \"priority\": 1,\n  \"visibility\": true,\n  \"title\": \"Deneme\",\n  \"content\": \"Deneme2\",\n  \"connectionLink\": \"tobeto.com\",\n  \"isActive\": true,\n  \"publishedDate\": \"2024-02-18T10:20:09.862Z\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/Surveys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSurvey",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"surveyTypeId\": 1,\n  \"organizationId\": 2,\n  \"priority\": 3,\n  \"visibility\": true,\n  \"title\": \"İstanbul Kodluyor\",\n  \"content\": \"Tobeto\",\n  \"connectionLink\": \"tobeto.com/platform\",\n  \"isActive\": true,\n  \"publishedDate\": \"2024-02-18T10:41:01.582Z\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/Surveys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSurvey",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJBZG1pbiBOQXJjaGl0ZWN0dXJlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJuYmYiOjE3MDgyNTMwNTQsImV4cCI6MTcwODI1MzY1NCwiaXNzIjoibkFyY2hpdGVjdHVyZUBrb2RsYW1hLmlvIiwiYXVkIjoic3RhcnRlclByb2plY3RAa29kbGFtYS5pbyJ9.IUuKKQGv5Kh9g-Vu0Puhp7rK5-SqbiYnMDSFWzEdGL9I4ZpCJbb3KDKmRuWH7Yj7At75aJfU564TWTfBquyolg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Surveys?PageIndex=0&PageSize=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Surveys"
+					],
+					"query": [
+						{
+							"key": "PageIndex",
+							"value": "0"
+						},
+						{
+							"key": "PageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSurvey",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/Surveys/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"Surveys",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

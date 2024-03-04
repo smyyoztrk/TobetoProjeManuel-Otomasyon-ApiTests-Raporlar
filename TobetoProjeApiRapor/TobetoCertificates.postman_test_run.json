@@ -1,0 +1,177 @@
+{
+	"id": "994b9f00-4c75-4c9c-83a3-af3945471c76",
+	"name": "TobetoCertificates",
+	"timestamp": "2024-03-02T10:17:48.331Z",
+	"collection_id": "32037921-e6666218-ddf9-402f-9d23-05cf5f72cc1a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T10:17:46.050Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9e8a4593-fa26-4a3a-a654-9aac0c7cc385",
+			"name": "Create Certificate",
+			"url": "http://localhost:60805/api/Certificates",
+			"time": 90,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				90
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "be9b0f06-6ad1-429f-92f4-37a7fd6c833b",
+			"name": "Get Certificate-id",
+			"url": "http://localhost:60805/api/Certificates/12",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "01859b1b-9965-478b-ac57-8eca97a1cff9",
+			"name": "Get Certificates",
+			"url": "http://localhost:60805/api/Certificates?PageIndex=0&PageSize=60",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				80
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "a0adecb4-7895-4f83-b023-a5546f411512",
+			"name": "Delete Certificate-id",
+			"url": "http://localhost:60805/api/Certificates/12",
+			"time": 134,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				134
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "e4bc77ea-bab8-4c65-807a-e2bf011f8bbc",
+			"name": "Update Certificate",
+			"url": "http://localhost:60805/api/Certificates",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 401,
+	"collection": {
+		"requests": [
+			{
+				"id": "9e8a4593-fa26-4a3a-a654-9aac0c7cc385",
+				"method": "POST"
+			},
+			{
+				"id": "be9b0f06-6ad1-429f-92f4-37a7fd6c833b",
+				"method": "GET"
+			},
+			{
+				"id": "01859b1b-9965-478b-ac57-8eca97a1cff9",
+				"method": "GET"
+			},
+			{
+				"id": "a0adecb4-7895-4f83-b023-a5546f411512",
+				"method": "DELETE"
+			},
+			{
+				"id": "e4bc77ea-bab8-4c65-807a-e2bf011f8bbc",
+				"method": "PUT"
+			}
+		]
+	}
+}

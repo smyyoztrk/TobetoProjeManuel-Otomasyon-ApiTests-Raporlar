@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "da18e695-b759-4f36-a3fb-1a10d9026199",
+		"name": "ClassroomExamsTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27921593"
+	},
+	"item": [
+		{
+			"name": "CreateClassroomExam",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"classroomId\": 1,\n  \"examId\": 1,\n  \"isActive\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/ClassroomExams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"ClassroomExams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClassroomExam-id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/ClassroomExams/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"ClassroomExams",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClassroomExam",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"classroomId\": 2,\n  \"examId\": 1,\n  \"isActive\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5278/api/ClassroomExams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"ClassroomExams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClassroomExam",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/ClassroomExams/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"ClassroomExams",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClassroomExam",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5278/api/ClassroomExams?PageIndex=0&PageSize=30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5278",
+					"path": [
+						"api",
+						"ClassroomExams"
+					],
+					"query": [
+						{
+							"key": "PageIndex",
+							"value": "0"
+						},
+						{
+							"key": "PageSize",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

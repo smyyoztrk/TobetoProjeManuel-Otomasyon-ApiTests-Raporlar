@@ -1,0 +1,146 @@
+{
+	"id": "94a63d56-5a11-4162-bfd5-142c29d82288",
+	"name": "ExamsTests",
+	"timestamp": "2024-03-02T12:19:24.112Z",
+	"collection_id": "27921593-4f01e4be-8736-4293-b48e-9ccf7aeae094",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T12:19:22.574Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "fcaeb304-d389-4ed6-a6cc-e50d9517cef3",
+			"name": "CreateExam",
+			"url": "http://localhost:5278/api/Exams",
+			"time": 172,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "0edb62b5-af74-4eab-a6fd-ce50280ae51f",
+			"name": "GetExam",
+			"url": "http://localhost:5278/api/Exams/2010",
+			"time": 191,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "da92ae5a-b9a1-4327-98a4-2ba77437f825",
+			"name": "UpdateExam",
+			"url": "http://localhost:5278/api/Exams",
+			"time": 283,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				283
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "c1614a05-2023-4964-bb46-6975ea85d643",
+			"name": "DeleteExam",
+			"url": "http://localhost:5278/api/Exams/2010",
+			"time": 198,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				198
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 844,
+	"collection": {
+		"requests": [
+			{
+				"id": "fcaeb304-d389-4ed6-a6cc-e50d9517cef3",
+				"method": "POST"
+			},
+			{
+				"id": "0edb62b5-af74-4eab-a6fd-ce50280ae51f",
+				"method": "GET"
+			},
+			{
+				"id": "da92ae5a-b9a1-4327-98a4-2ba77437f825",
+				"method": "PUT"
+			},
+			{
+				"id": "c1614a05-2023-4964-bb46-6975ea85d643",
+				"method": "DELETE"
+			}
+		]
+	}
+}

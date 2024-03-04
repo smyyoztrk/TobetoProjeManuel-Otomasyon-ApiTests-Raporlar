@@ -1,0 +1,146 @@
+{
+	"id": "c8250701-d425-4d1c-84ed-d49dbf4509b0",
+	"name": "ForeignLanguagesLevelsTests",
+	"timestamp": "2024-03-02T13:13:51.730Z",
+	"collection_id": "27921593-bcd52024-c51e-43dd-bbf8-0c7fc0c790d2",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T13:13:50.021Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "51b5f702-9a72-4b26-aca7-25518fb01667",
+			"name": "CreateForeignLanguageLevel",
+			"url": "http://localhost:5278/api/ForeignLanguageLevels",
+			"time": 193,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "687f0909-77d8-49f8-902c-25ecf095e076",
+			"name": "GetForeignLanguageLevel",
+			"url": "http://localhost:5278/api/ForeignLanguageLevels/3",
+			"time": 157,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "171846dd-cda7-4510-93c9-c9ef19303ee6",
+			"name": "UpdateForeignLanguageLevel",
+			"url": "http://localhost:5278/api/ForeignLanguageLevels",
+			"time": 275,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "210dbc65-1428-401a-bdc1-57a5607df2d7",
+			"name": "DeleteForeignLanguageLevel",
+			"url": "http://localhost:5278/api/ForeignLanguageLevels/3",
+			"time": 290,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 915,
+	"collection": {
+		"requests": [
+			{
+				"id": "51b5f702-9a72-4b26-aca7-25518fb01667",
+				"method": "POST"
+			},
+			{
+				"id": "687f0909-77d8-49f8-902c-25ecf095e076",
+				"method": "GET"
+			},
+			{
+				"id": "171846dd-cda7-4510-93c9-c9ef19303ee6",
+				"method": "PUT"
+			},
+			{
+				"id": "210dbc65-1428-401a-bdc1-57a5607df2d7",
+				"method": "DELETE"
+			}
+		]
+	}
+}

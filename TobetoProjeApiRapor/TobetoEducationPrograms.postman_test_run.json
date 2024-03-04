@@ -1,0 +1,177 @@
+{
+	"id": "93cd3336-9721-4411-a2af-ce97507e30bb",
+	"name": "TobetoEducationPrograms",
+	"timestamp": "2024-03-02T10:58:00.041Z",
+	"collection_id": "32037921-8b536b47-1c3c-4760-b1b0-f57e0bbdfe26",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-02T10:57:56.927Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e0c80002-b5e0-44ad-8f78-631291bb7298",
+			"name": "Create EducationProgram",
+			"url": "http://localhost:60805/api/EducationPrograms",
+			"time": 72,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code 201": true
+			},
+			"testPassFailCounts": {
+				"Status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Status code 201": true
+				}
+			]
+		},
+		{
+			"id": "cc865e9a-9d92-4f8d-b54d-484ceeff80fb",
+			"name": "Get EducationPrograms",
+			"url": "http://localhost:60805/api/EducationPrograms?PageIndex=0&PageSize=30",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "5990e7b8-9acb-470a-8d48-d891f6c813c9",
+			"name": "Get Educationaprogram-id",
+			"url": "http://localhost:60805/api/EducationPrograms/1",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "04083e2b-076b-402a-b097-5a54f8735efa",
+			"name": "Update EducationProgram",
+			"url": "http://localhost:60805/api/EducationPrograms",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		},
+		{
+			"id": "4fe23e20-794b-4868-a210-ce7801da4fa5",
+			"name": "Delete EducationProgram",
+			"url": "http://localhost:60805/api/EducationPrograms/7",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 276,
+	"collection": {
+		"requests": [
+			{
+				"id": "e0c80002-b5e0-44ad-8f78-631291bb7298",
+				"method": "POST"
+			},
+			{
+				"id": "cc865e9a-9d92-4f8d-b54d-484ceeff80fb",
+				"method": "GET"
+			},
+			{
+				"id": "5990e7b8-9acb-470a-8d48-d891f6c813c9",
+				"method": "GET"
+			},
+			{
+				"id": "04083e2b-076b-402a-b097-5a54f8735efa",
+				"method": "PUT"
+			},
+			{
+				"id": "4fe23e20-794b-4868-a210-ce7801da4fa5",
+				"method": "DELETE"
+			}
+		]
+	}
+}
