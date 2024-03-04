@@ -1,0 +1,1 @@
+Bu proje Tobeto web sitesinin manuel olarak test edilmesini içermektedir. Bu projede Tobeto eğitim programı için iş analisti ekibinden alınan gereksinimler doğrultusunda test senaryoları ve test caseler oluşturulmuş ve bu senaryolar Jira Xray üzerinde yönetilmiştir. Toplamda 25 test senaryosu, 92 test case ve 14 hata oluşturulmuştur.
